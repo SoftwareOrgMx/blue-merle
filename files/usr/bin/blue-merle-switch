@@ -31,7 +31,7 @@ echo "$now" > /tmp/sim_change_start
 e750-mcu "Starting SIM    swap."
 sleep 3
 
-i=5
+i=1
 until  [[ $i -lt 0 ]]
 do
 	e750-mcu "Pull switch to  abort ($i).     "
@@ -125,7 +125,7 @@ e750-mcu "You should      change your     location before booting again."
 sleep 5 
 
 
-i=5
+i=1
 until  [[ $i -eq 0 ]]
 do
         i=$((i-1))
